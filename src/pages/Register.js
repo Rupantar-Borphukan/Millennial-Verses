@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { User, Mail, Lock, Shield } from 'lucide-react';
+import { User, Mail, Lock } from 'lucide-react';
 import '../App.css';
 import { useAuth } from '../context/AuthContext';
 
@@ -10,7 +10,7 @@ const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
