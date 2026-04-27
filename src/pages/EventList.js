@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getEvents, rsvpEvent, deleteEvent } from '../services/api';
 import { useAuth } from '../context/AuthContext';
-import { Calendar, MapPin, Clock, Users, Trash2, Check, Loader } from 'lucide-react';
+import { Calendar, MapPin, Clock, Users, Trash2, Check} from 'lucide-react';
 import '../App.css';
 
 const EventList = () => {
