@@ -72,8 +72,11 @@ const EventList = () => {
   if (loading) {
     return (
       <div className="event-loading">
-        <Loader className="animate-spin" size={32} />
-        <p>Loading events...</p>
+        <div className="mv-loader">
+          <span>M</span>
+          <span>V</span>
+        </div>
+        <p className="loading-text">Loading events...</p>
       </div>
     );
   }
